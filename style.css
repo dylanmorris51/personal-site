@@ -8,7 +8,7 @@ Version: 1.0
 /*
 [Table of contents]
 
-* Glogbal Style
+* Global Style
 * Preloader
 * Section Title
 * Main Menu / Navbar
@@ -690,6 +690,12 @@ button:focus {
    Portfolio Section
 ::::::::::::::::::::::::::::::::::::*/
 
+#portfolio .section-title h2:before {
+    left: auto;
+    right: 50%;
+    background-color: #fff
+}
+
 .work-list {
     margin-bottom: 60px;
 }
@@ -831,10 +837,36 @@ button:focus {
     visibility: visible
 }
 
+/*::::::::::::::::::::::::::::::::::::
+   Modal Area
+::::::::::::::::::::::::::::::::::::*/
+
+.btn > a {
+    color: #fff;
+}
 
 /*::::::::::::::::::::::::::::::::::::
-   Frequently asked questions
+   Technology
 ::::::::::::::::::::::::::::::::::::*/
+
+svg {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+.technology {
+    color: #fff
+}
+
+.section-title.tech-title h2:after {
+    background-color: #fff;
+}
+
+/*::::::::::::::::::::::::::::::::::::
+   FAQ
+::::::::::::::::::::::::::::::::::::*/
+
 
 .section-title.faq-title h2:after {
     background-color: #000;
