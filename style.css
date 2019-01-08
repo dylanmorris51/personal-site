@@ -15,7 +15,7 @@ Version: 1.0
 * Hero Area / Welcome Area / Slider Area
 * Featured Area
 * About Area
-* Fact Counter Section
+* Technology Section
 * Service Section
 * Why choose Me Section
 * Portfolio Section
@@ -514,7 +514,7 @@ button:focus {
 
 
 /*::::::::::::::::::::::::::::::::::::
-   Fact Counter Section
+   Technology Section
 ::::::::::::::::::::::::::::::::::::*/
 
 .fact-counter:after {
@@ -841,6 +841,10 @@ button:focus {
    Modal Area
 ::::::::::::::::::::::::::::::::::::*/
 
+.modalText {
+    margin-top: 20px;
+}
+
 .btn > a {
     color: #fff;
 }
@@ -864,28 +868,28 @@ svg {
 }
 
 /*::::::::::::::::::::::::::::::::::::
-   FAQ
+   Resume
 ::::::::::::::::::::::::::::::::::::*/
 
 
-.section-title.faq-title h2:after {
+.section-title.resume-title h2:after {
     background-color: #000;
 }
 
-.section-title.faq-title h2:before {
+.section-title.resume-title h2:before {
     background-color: #fff;
 }
 
-.faq-bg {
+.resume-bg {
     height: 100%;
     min-height: 320px;
 }
 
-.single-faq {
+.single-resume {
     margin-bottom: 5px;
 }
 
-.single-faq h4 {
+.single-resume h4 {
     color: #fff;
     padding: 5px 15px;
     background-color: #333;
@@ -896,12 +900,12 @@ svg {
     z-index: 1;
 }
 
-.single-faq h4[aria-expanded="true"]:after {
+.single-resume h4[aria-expanded="true"]:after {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
 }
 
-.single-faq h4:after {
+.single-resume h4:after {
     position: absolute;
     font-family: FontAwesome;
     content: "\f107";
@@ -915,10 +919,14 @@ svg {
     line-height: 200%;
 }
 
-.faq-body {
+.resume-body {
     background: #3e3e3e;
     color: #fff;
     padding: 15px;
+}
+
+.resume-body p {
+    color: #fff;
 }
 
 
