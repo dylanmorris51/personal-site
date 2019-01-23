@@ -15,11 +15,11 @@ Version: 1.0
 * Hero Area / Welcome Area / Slider Area
 * Featured Area
 * About Area
-* Fact Counter Section
+* Technology Section
 * Service Section
 * Why choose Me Section
 * Portfolio Section
-* Frequently asked questions
+* Resume
 * Blog Section
   - Blog Main Page
   - Sidebar
@@ -66,6 +66,14 @@ h6 {
     color: #000;
     font-weight: 600;
     line-height: 1.7;
+    margin: 0;
+}
+
+ul {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
     margin: 0;
 }
 
@@ -253,6 +261,19 @@ button:focus {
     -webkit-transition: .3s;
     transition: .3s;
 }
+
+.navbar::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: #3e3e3e;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
 .navbar-brand.logo img {
     max-height: 40px;
 }
@@ -514,7 +535,7 @@ button:focus {
 
 
 /*::::::::::::::::::::::::::::::::::::
-   Fact Counter Section
+   Technology Section
 ::::::::::::::::::::::::::::::::::::*/
 
 .fact-counter:after {
@@ -841,6 +862,10 @@ button:focus {
    Modal Area
 ::::::::::::::::::::::::::::::::::::*/
 
+.modalText {
+    margin-top: 20px;
+}
+
 .btn > a {
     color: #fff;
 }
@@ -864,28 +889,28 @@ svg {
 }
 
 /*::::::::::::::::::::::::::::::::::::
-   FAQ
+   Resume
 ::::::::::::::::::::::::::::::::::::*/
 
 
-.section-title.faq-title h2:after {
+.section-title.resume-title h2:after {
     background-color: #000;
 }
 
-.section-title.faq-title h2:before {
+.section-title.resume-title h2:before {
     background-color: #fff;
 }
 
-.faq-bg {
+.resume-bg {
     height: 100%;
     min-height: 320px;
 }
 
-.single-faq {
+.single-resume {
     margin-bottom: 5px;
 }
 
-.single-faq h4 {
+.single-resume h4 {
     color: #fff;
     padding: 5px 15px;
     background-color: #333;
@@ -896,14 +921,14 @@ svg {
     z-index: 1;
 }
 
-.single-faq h4[aria-expanded="true"]:after {
+.single-resume h4[aria-expanded="true"]:after {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
 }
 
-.single-faq h4:after {
+.single-resume h4:after {
     position: absolute;
-    font-family: FontAwesome;
+    font-family: 'Source Sans Pro', sans-serif;
     content: "\f107";
     text-align: center;
     right: 0;
@@ -915,10 +940,31 @@ svg {
     line-height: 200%;
 }
 
-.faq-body {
+.resume-body {
     background: #3e3e3e;
     color: #fff;
     padding: 15px;
+}
+
+.resume-body p, ul {
+    color: #fff;
+}
+
+.resume-button {
+    padding-top: 20px;
+    height: 100%;
+    text-align: right;
+}
+
+.resume-button .button {
+    color: #fff;
+    font-size: 1.5em
+}
+
+.resume-button .button:hover {
+    color: #000;
+    border-color: #000;
+    background-color: #fff;
 }
 
 
@@ -926,7 +972,7 @@ svg {
    Blog Section
 ::::::::::::::::::::::::::::::::::::*/
 
-.single-blog {
+/* .single-blog {
     background-color: #fff;
     padding: 15px;
     box-shadow: 0 0 10px #ddd;
@@ -1143,14 +1189,14 @@ input:focus {
 .sidebar-widget ol.tags li a:hover {
     color: #000;
     background-color: #36ACB7;
-}
+} */
 
 
 /*::::::::::::::::::::::::::::::::::::
    Single Blog
 ::::::::::::::::::::::::::::::::::::*/
 
-.blog-post {
+/* .blog-post {
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 0 15px #eee;
@@ -1348,7 +1394,7 @@ p.comment-date {
     color: #36ACB7;
     background-color: #000;
     border-color: #000;
-}
+} */
 
 
 
@@ -1358,7 +1404,7 @@ p.comment-date {
    Testimonial Section
 ::::::::::::::::::::::::::::::::::::*/
 
-.testimonial-area {
+/* .testimonial-area {
     position: relative;
     z-index: 1;
 }
@@ -1418,14 +1464,14 @@ p.comment-date {
 .testimonials .owl-nav div:hover {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
+} */
 
 
 /*::::::::::::::::::::::::::::::::::::
    Team Section
 ::::::::::::::::::::::::::::::::::::*/
 
-.single-team {
+/* .single-team {
     border-bottom: 10px solid #36ACB7;
     box-shadow: 0 0 30px #ddd;
     margin-bottom: 30px;
@@ -1537,34 +1583,21 @@ p.comment-date {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
-}
+} */
 
 
 /*::::::::::::::::::::::::::::::::::::
    Call to Action Area
 ::::::::::::::::::::::::::::::::::::*/
 
-.cta-button {
-    height: 100%;
-    text-align: right;
-}
 
-.cta-button .button {
-    color: #000;
-}
-
-.cta-button .button:hover {
-    color: #fff;
-    border-color: #000;
-    background-color: #000;
-}
 
 
 /*::::::::::::::::::::::::::::::::::::
    Pricing Area
 ::::::::::::::::::::::::::::::::::::*/
 
-.single-price-box {
+/* .single-price-box {
     box-shadow: 0 0 15px #ddd;
     margin-bottom: 30px;
 }
@@ -1610,14 +1643,14 @@ p.comment-date {
 .single-price-box .button:hover {
     background-color: #36ACB7;
     border-color: #36ACB7;
-}
+} */
 
 
 /*::::::::::::::::::::::::::::::::::::
    Contact Area
 ::::::::::::::::::::::::::::::::::::*/
 
-.contact-form {
+/* .contact-form {
     padding: 60px;
     box-shadow: 0 0 10px #ccc;
 }
@@ -1703,7 +1736,7 @@ input:-webkit-autofill {
 
 .form-message.success {
     color: #000;
-}
+} */
 
 
 /*:::::::::::::::::::::::::::::::::::
