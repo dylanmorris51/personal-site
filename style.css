@@ -266,8 +266,8 @@ button:focus {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-color: #3e3e3e;
-	opacity: 0.5;
+	background-color: rgb(38, 111, 117);
+	opacity: 0.7;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -325,8 +325,9 @@ button:focus {
 .slider-bg {
     height: 100%;
     width: 100%;
-    background-position: center;
-    background-size: cover;
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 1;
 }
@@ -340,7 +341,7 @@ button:focus {
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: .3;
+    opacity: .1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     z-index: -1;
 }
