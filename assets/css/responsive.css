@@ -96,17 +96,23 @@
     /*::::::::::::::::::::::::::::::::::::
        Hero Area
     ::::::::::::::::::::::::::::::::::::*/
+
+    /* .d-table {
+        max-width: 40%;
+    } */
+
     .hero-aria,
     .hero-area-slids,
     .single-slider {
-        height: 440px;
+        height: 282px;
     }
+
     .hero-content h2 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .hero-content h3 {
-        font-size: 15px;
+        font-size: 13px;
         margin: 15px 0;
     }
 
