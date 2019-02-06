@@ -97,14 +97,15 @@ img {
     text-transform: uppercase;
     border: 2px solid;
     padding: 10px 20px;
+    background-color: rgb(56, 56, 56);
 }
 
 .button:hover {
-    color: #000;
+    background-color: #fff;
 }
 
 .bg-a {
-    background-color: #000;
+    background-color: rgb(56, 56, 56);
 }
 
 .section-padding {
@@ -132,7 +133,7 @@ img {
 }
 
 .bg-secondary {
-    background-color: #36ACB7 !important;
+    background-color: rgba(128, 216, 104, .8) !important;
 }
 
 button:focus {
@@ -164,7 +165,7 @@ button:focus {
 
 .cube1,
 .cube2 {
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
     width: 25px;
     height: 25px;
     position: absolute;
@@ -251,7 +252,7 @@ button:focus {
 .section-title h2:before {
     left: auto;
     right: 50%;
-    background-color: #36ACB7
+    background-color: rgba(128, 216, 104, .8)
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -266,7 +267,7 @@ button:focus {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-color: rgb(38, 111, 117);
+	background-color: #3e3e3e;
 	opacity: 0.7;
 	position: absolute;
 	top: 0;
@@ -281,11 +282,12 @@ button:focus {
 .navbar-expand-lg .navbar-nav .nav-link {
     color: #fff;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover,
 .navbar-expand-lg .navbar-nav .nav-link.active {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -310,7 +312,7 @@ button:focus {
     bottom: 0;
     width: 50%;
     height: 100%;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
     opacity: .8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     z-index: 2;
@@ -330,6 +332,8 @@ button:focus {
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    /* added background-color to change grey bars above and below hero photos when window is reduced in size */
+    background-color: #fff;
 }
 
 
@@ -340,7 +344,7 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    /* background-color: #fff; */
     opacity: .1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     z-index: -1;
@@ -354,7 +358,7 @@ button:focus {
 
 
 .hero-content h2 {
-    color: #fff;
+    color: rgb(56, 56, 56);
     font-size: 90px;
     font-weight: 600;
     line-height: 1;
@@ -362,6 +366,14 @@ button:focus {
 
 .hero-content .button {
     margin-top: 30px;
+}
+
+.hero-aria .container {
+    max-width: 90%;
+}
+
+.hero-aria h3 {
+    color: rgb(36, 35, 35);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -389,7 +401,7 @@ button:focus {
 }
 
 .single-featured-item-wrap:hover a {
-    color: #36ACB7
+    color: rgba(128, 216, 104, .8)
 }
 
 .single-featured-item-wrap:hover a:after {
@@ -413,7 +425,7 @@ button:focus {
     font-size: 60px;
     position: absolute;
     top: 0;
-    color: #36acb7;
+    color: rgba(128, 216, 104, .8);
     opacity: .5;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 } */
@@ -429,20 +441,32 @@ button:focus {
     position: relative;
     background-size: cover;
     background-position: top;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
 }
 
 .social-aria a {
     color: #fff;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     border: 1px solid;
     text-align: center;
-    line-height: 30px;
+    line-height: 45px;
     margin: 0 5px;
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+.social-aria i {
+    font-size: 30px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    vertical-align: middle;
 }
 
 .social-aria {
@@ -472,7 +496,7 @@ button:focus {
 }
 
 .about-content h2 span {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
     font-size: 100%;
 }
 
@@ -522,7 +546,7 @@ button:focus {
 .skillbar-bar {
     height: 35px;
     width: 0px;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
 }
 
 .skill-bar-percent {
@@ -600,7 +624,7 @@ button:focus {
 }
 
 .service-area:before {
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
     position: absolute;
     content: '';
     width: 100%;
@@ -616,7 +640,7 @@ button:focus {
 .single-service {
     background-color: #fff;
     padding: 15px;
-    border: 1px solid #36ACB7;
+    border: 1px solid rgba(128, 216, 104, .8);
     -webkit-transition: .3s;
     transition: .3s;
     margin-bottom: 30px;
@@ -654,7 +678,7 @@ button:focus {
 
 .service-icon {
     font-size: 50px;
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }
 
 
@@ -672,7 +696,7 @@ button:focus {
 
 .single-why-me:hover .why-me-icon {
     background-color: #000;
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }
 
 .why-me-right .why-me-icon,
@@ -688,7 +712,7 @@ button:focus {
     right: 0;
     bottom: 0;
     display: inline-block;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -787,6 +811,7 @@ button:focus {
 
 .portfolio-icon {
     position: absolute;
+    color: #fff;
     top: 100%;
     margin-top: -20px;
     left: 50%;
@@ -802,7 +827,8 @@ button:focus {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     visibility: visible;
-    top: 50%
+    top: 50%;
+    color: #fff;
 }
 
 .portfolio-icon a {
@@ -904,7 +930,10 @@ svg {
 
 .resume-bg {
     height: 100%;
-    min-height: 320px;
+    min-height: 280px;
+    position: relative;
+    background-size: cover;
+    background-position: top;
 }
 
 .single-resume {
@@ -963,8 +992,8 @@ svg {
 }
 
 .resume-button .button:hover {
-    color: #000;
-    border-color: #000;
+    color: rgb(56, 56, 56);
+    border-color: rgb(56, 56, 56);
     background-color: #fff;
 }
 
@@ -1015,8 +1044,8 @@ h4.blog-title a {
 }
 
 .single-blog .button:hover {
-    background-color: #36ACB7;
-    border-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
+    border-color: rgba(128, 216, 104, .8);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1061,8 +1090,8 @@ h4.blog-title a {
 }
 
 .button.blog-btn:hover {
-    background-color: #36ACB7;
-    border-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
+    border-color: rgba(128, 216, 104, .8);
 }
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1131,7 +1160,7 @@ input:focus {
 }
 
 .sidebar-widget ol li a:hover {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }
 
 .sidebar-widget ol.recent-post li {
@@ -1151,7 +1180,7 @@ input:focus {
 }
 
 .sidebar-widget ol.recent-post li a:hover {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }
 
 .blog-content {
@@ -1189,7 +1218,7 @@ input:focus {
 
 .sidebar-widget ol.tags li a:hover {
     color: #000;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
 } */
 
 
@@ -1211,7 +1240,7 @@ span.blog-date,
 .blockquote {
     padding: 30px;
     margin: 15px;
-    border-left: 10px solid #36ACB7;
+    border-left: 10px solid rgba(128, 216, 104, .8);
 }
 
 .blog-content-footer {
@@ -1383,8 +1412,8 @@ p.comment-date {
 
 .comment-btn .button {
     color: #000;
-    background-color: #36ACB7;
-    border-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
+    border-color: rgba(128, 216, 104, .8);
     -webkit-transition: .3s;
     transition: .3s;
     cursor: pointer;
@@ -1392,7 +1421,7 @@ p.comment-date {
 }
 
 .comment-btn .button:hover {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
     background-color: #000;
     border-color: #000;
 } */
@@ -1473,7 +1502,7 @@ p.comment-date {
 ::::::::::::::::::::::::::::::::::::*/
 
 /* .single-team {
-    border-bottom: 10px solid #36ACB7;
+    border-bottom: 10px solid rgba(128, 216, 104, .8);
     box-shadow: 0 0 30px #ddd;
     margin-bottom: 30px;
 }
@@ -1499,7 +1528,7 @@ p.comment-date {
 }
 
 .single-team:hover .team-thumb:after {
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
 }
 
 .team-thumb:after,
@@ -1614,7 +1643,7 @@ p.comment-date {
 }
 
 .price-head h3 {
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
     font-size: 25px;
     padding: 15px;
 }
@@ -1642,8 +1671,8 @@ p.comment-date {
 }
 
 .single-price-box .button:hover {
-    background-color: #36ACB7;
-    border-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
+    border-color: rgba(128, 216, 104, .8);
 } */
 
 
@@ -1723,7 +1752,7 @@ input:-webkit-autofill {
 
 .form-btn .button:hover {
     color: #000;
-    background-color: #36ACB7;
+    background-color: rgba(128, 216, 104, .8);
 }
 
 .form-message {
@@ -1756,5 +1785,5 @@ input:-webkit-autofill {
 }
 
 .copyright-text a:hover {
-    color: #36ACB7;
+    color: rgba(128, 216, 104, .8);
 }

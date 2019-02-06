@@ -17,9 +17,9 @@
     });
 
 
-    //Smoth Scroll
+    //Smooth Scroll
     $(function () {
-        $('.nav-link, .smoth-scroll').on('click', function (event) {
+        $('.nav-link, .smooth-scroll').on('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 0
@@ -51,7 +51,7 @@
 
     $(function () {
         element.typed({
-            strings: ["Software Developer.", "Storyteller."],
+            strings: ["Software Developer.", "Storyteller.", "Space Pirate."],
             typeSpeed: 100,
             loop: true,
             autoplay: true,
