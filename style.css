@@ -46,13 +46,18 @@ p {
     margin: 0;
 }
 
+p > a {
+    font-weight: bold;
+}
+
 a {
     -webkit-transition: .3s;
-    transition: .3s
+    transition: .3s;
+    color: rgb(128, 216, 104);
 }
 
 a:hover {
-    color: #000;
+    color: rgb(56, 56, 56);
     text-decoration: none;
 }
 
@@ -777,6 +782,7 @@ button:focus {
     padding-right: 7.5px;
 }
 
+/* Used on images smaller than the portfolio container */
 .single-portfolio {
     height: 240px;
     margin-bottom: 15px;
@@ -787,6 +793,12 @@ button:focus {
     position: relative;
     z-index: 1;
     overflow: hidden;
+}
+
+/* Additional .single-portfolio class used on images larger than the portfolio container  */
+.shrink {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .single-portfolio:after {
@@ -893,9 +905,10 @@ button:focus {
     margin-top: 20px;
 }
 
-.btn > a {
-    color: #fff;
+.modal-body img {
+    max-height: 400px;
 }
+
 
 /*::::::::::::::::::::::::::::::::::::
    Technology
@@ -949,6 +962,7 @@ svg {
     font-size: 24px;
     position: relative;
     z-index: 1;
+    display: flex
 }
 
 .single-resume h4[aria-expanded="true"]:after {
@@ -959,15 +973,16 @@ svg {
 .single-resume h4:after {
     position: absolute;
     font-family: 'Source Sans Pro', sans-serif;
-    content: "\f107";
+    font-size: .75em;
+    content: "▼";
     text-align: center;
     right: 0;
     top: 0;
     color: #fff;
-    background-color: #000;
+    background-color: rgb(36, 35, 35);
     width: 60px;
     height: 100%;
-    line-height: 200%;
+    line-height: 275%;
 }
 
 .resume-body {
@@ -1052,7 +1067,7 @@ h4.blog-title a {
    Blog Main Page
 ::::::::::::::::::::::::::::::::::::*/
 
-.bg-overlay {
+/* .bg-overlay {
     position: relative;
     z-index: 1;
 }
@@ -1092,7 +1107,7 @@ h4.blog-title a {
 .button.blog-btn:hover {
     background-color: rgba(128, 216, 104, .8);
     border-color: rgba(128, 216, 104, .8);
-}
+} */
 
 /*::::::::::::::::::::::::::::::::::::
    Sidebar
