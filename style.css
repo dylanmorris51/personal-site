@@ -101,7 +101,7 @@ img {
     display: inline-block;
     text-transform: uppercase;
     border: 2px solid;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: rgb(56, 56, 56);
 }
 
@@ -353,6 +353,7 @@ button:focus {
     opacity: .1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     z-index: -1;
+
 }
 
 .hero-content {
