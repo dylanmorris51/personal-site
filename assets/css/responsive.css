@@ -96,17 +96,29 @@
     /*::::::::::::::::::::::::::::::::::::
        Hero Area
     ::::::::::::::::::::::::::::::::::::*/
+
+    .d-table-cell {
+        vertical-align: text-top;
+        padding-top: 30px;
+    }
+
     .hero-aria,
     .hero-area-slids,
     .single-slider {
-        height: 440px;
+        height: 282px;
+
     }
+
+    .slider-bg {
+        background-position: bottom right;
+    }
+
     .hero-content h2 {
         font-size: 30px;
     }
 
     .hero-content h3 {
-        font-size: 15px;
+        font-size: 11px;
         margin: 15px 0;
     }
 
@@ -115,6 +127,14 @@
     }
     .hero-content {
         max-width: 70%;
+    }
+
+    .hero-content .button {
+        max-width: 50%;
+        text-align: center;
+        margin-top: 125px;
+        font-size: 12px;
+        padding: 5px 5px;
     }
 
     /*::::::::::::::::::::::::::::::::::::
