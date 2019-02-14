@@ -996,6 +996,10 @@ svg {
     color: #fff;
 }
 
+.resume-body > a:hover {
+    color: #fff
+}
+
 .resume-button {
     padding-top: 20px;
     height: 100%;
@@ -1012,7 +1016,6 @@ svg {
     border-color: rgb(56, 56, 56);
     background-color: #fff;
 }
-
 
 /*::::::::::::::::::::::::::::::::::::
    Blog Section
