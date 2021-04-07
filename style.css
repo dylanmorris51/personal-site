@@ -577,7 +577,7 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #973A3A;
+    background-color: #EB96AB;
     z-index: -1;
     opacity: .8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
