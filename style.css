@@ -569,6 +569,7 @@ button:focus {
    Technology Section
 ::::::::::::::::::::::::::::::::::::*/
 
+
 .fact-counter:after {
     position: absolute;
     content: '';
@@ -576,7 +577,7 @@ button:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #973A3A;
     z-index: -1;
     opacity: .8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
